@@ -297,84 +297,70 @@ const CONFIG = {
     }
   ],
 
-  STARTER_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
+  STARTER_FOOTER_SLOGAN: 'Because of your needs, we exist; it\'s all by destiny\'s decree.',
 
-  // 页脚三列菜单组
+  // 页脚两列菜单组
   STARTER_FOOTER_LINK_GROUP: [
     {
-      TITLE: '关于我们',
+      TITLE: 'Contact Us',
       LINK_GROUP: [
-        { TITLE: '官方主页', URL: '/#home' },
-        { TITLE: '操作文档', URL: 'https://docs.tangly1024.com/about' },
         {
-          TITLE: '帮助支持',
-          URL: 'https://docs.tangly1024.com/article/how-to-question'
+          TITLE: 'Address: 608, Upper West Shanghai Office Tower 3, No. 69 Lishang Road, Putuo, Shanghai, China 200333',
+          URL: '#'
         },
         {
-          TITLE: '合作申请',
-          URL: 'https://docs.tangly1024.com/article/my-service'
+          TITLE: 'Tel: +86-400-8930883',
+          URL: 'tel:+86-400-8930883'
+        },
+        {
+          TITLE: 'Email: sales@luocompany.com',
+          URL: 'mailto:sales@luocompany.com'
+        },
+        {
+          TITLE: 'Web: www.luomarine.com',
+          URL: 'https://www.luomarine.com'
         }
       ]
     },
     {
-      TITLE: '功能特性',
+      TITLE: 'Download',
       LINK_GROUP: [
         {
-          TITLE: '部署指南',
-          URL: 'https://docs.tangly1024.com/article/vercel-deploy-notion-next'
+          TITLE: 'Standard download',
+          URL: '/download'
         },
-        {
-          TITLE: '升级指南',
-          URL: 'https://docs.tangly1024.com/article/how-to-update-notionnext'
-        },
-        { TITLE: '最新版本', URL: 'https://docs.tangly1024.com/article/latest' }
       ]
     },
-    {
-      TITLE: 'Notion写作',
-      LINK_GROUP: [
-        {
-          TITLE: 'Notion开始写作',
-          URL: 'https://docs.tangly1024.com/article/start-to-write'
-        },
-        {
-          TITLE: '快捷键提升效率',
-          URL: 'https://docs.tangly1024.com/article/notion-short-key'
-        },
-        {
-          TITLE: '中国大陆使用Notion',
-          URL: 'https://docs.tangly1024.com/article/notion-faster'
-        }
-      ]
-    }
+
   ],
 
-  STARTER_FOOTER_BLOG_LATEST_TITLE: '最新文章',
+ STARTER_FOOTER_BLOG_LATEST_TITLE: 'New Products',
 
-  STARTER_FOOTER_PRIVACY_POLICY_TEXT: '隐私政策',
+
+  STARTER_FOOTER_PRIVACY_POLICY_TEXT: 'Privacy Policy',
   STARTER_FOOTER_PRIVACY_POLICY_URL: '/privacy-policy',
 
-  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_TEXT: '法律声明',
+  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_TEXT: 'Legacy Notice',
   STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_URL: '/legacy-notice',
 
-  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT: '服务协议',
+  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT: 'Terms Of Use',
   STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL: '/terms-of-use',
 
   // 404页面的提示语
-  STARTER_404_TITLE: '我们似乎找不到您要找的页面。',
-  STARTER_404_TEXT: '抱歉！您要查找的页面不存在。可能已经移动或删除。',
-  STARTER_404_BACK: '回到主页',
+  STARTER_404_TITLE: 'We can\'t seem to find the page you\'re looking for.',
+  STARTER_404_TEXT: 'Sorry! The page you are looking for may have been moved or deleted.',
+  STARTER_404_BACK: 'Back to Home',
 
   // 页面底部的行动呼吁模块
   STARTER_CTA_ENABLE: false,
-  STARTER_CTA_TITLE: '你还在等待什么呢？',
-  STARTER_CTA_TITLE_2: '现在开始吧',
+  STARTER_CTA_TITLE: 'What are you waiting for?',
+  STARTER_CTA_TITLE_2: 'Start now',
   STARTER_CTA_DESCRIPTION:
-    '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
+    'Visit the luomarine operation documentation, we provide detailed tutorials to help you build the site immediately',
   STARTER_CTA_BUTTON: false, // 是否显示按钮
   STARTER_CTA_BUTTON_URL:
-    'https://docs.tangly1024.com/article/vercel-deploy-notion-next',
-  STARTER_CTA_BUTTON_TEXT: '开始体验',
+    'https://luomarine.com',
+  STARTER_CTA_BUTTON_TEXT: 'Start now',
 
   STARTER_POST_REDIRECT_ENABLE: false, // 默認開啟重定向
   STARTER_POST_REDIRECT_URL: 'https://luomarine.com', // 重定向域名

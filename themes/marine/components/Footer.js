@@ -40,7 +40,7 @@ export const Footer = props => {
               return (
                 <div
                   key={index}
-                  className='w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12'>
+                  className='w-full px-3 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-3/12'>
                   <div className='mb-10 w-full'>
                     <h4 className='mb-9 text-lg font-semibold text-white'>
                       {item.TITLE}
@@ -134,7 +134,7 @@ export const Footer = props => {
                   <p className='text-base text-gray-7'>
                     Design by
                     <a
-                      href='https://github.com/tangly1024/NotionNext'
+                      href='https://luomarine.com'
                       rel='nofollow noopner noreferrer'
                       target='_blank'
                       className='px-1 text-gray-1 hover:underline'>

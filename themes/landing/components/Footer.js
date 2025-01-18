@@ -45,7 +45,7 @@ export default function Footer() {
                             <Logo />
                         </div>
                         <div className="text-sm text-gray-600">
-                            <Link href="/terms-of-use" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">服务条款</Link> · <Link href="/privacy-policy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">隐私政策</Link>
+                            <Link href="/terms-of-use" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">服务条款</Link> · <Link href="/privacy-policy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
                         </div>
                     </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
                         <h6 className="text-gray-800 font-medium mb-2">产品</h6>
                         <ul className="text-sm">
                             <li className="mb-2">
-                                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">NotionNext</a>
+                                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">luomarine</a>
                             </li>
                             <li className="mb-2">
                                 {/* <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Vercel</a> */}
@@ -76,16 +76,16 @@ export default function Footer() {
                         <h6 className="text-gray-800 font-medium mb-2">资源</h6>
                         <ul className="text-sm">
                             <li className="mb-2">
-                                <a href="https://docs.tangly1024.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">技术文档</a>
+                                <a href="https://docs.luomarine.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">技术文档</a>
                             </li>
                             <li className="mb-2">
-                                <a href="https://docs.tangly1024.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">教程指南</a>
+                                <a href="https://docs.luomarine.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">教程指南</a>
                             </li>
                             <li className="mb-2">
-                                <a href="https://blog.tangly1024.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">博客</a>
+                                <a href="https://blog.luomarine.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">博客</a>
                             </li>
                             <li className="mb-2">
-                                <a href="https://blog.tangly1024.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">支持中心</a>
+                                <a href="https://blog.luomarine.com" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">支持中心</a>
                             </li>
                             <li className="mb-2">
                                 <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">合作方</a>
@@ -151,7 +151,7 @@ export default function Footer() {
                     <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
                         <li>
                           <div className='h-full flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100'>
-                             Powered by<a href='https://github.com/tangly1024/NotionNext' className='mx-1 hover:underline font-semibold'>NotionNext {siteConfig('VERSION')}</a>
+                             Powered by<a href='https://github.com/tangly1024/NotionNext' className='mx-1 hover:underline font-semibold'>luomarine {siteConfig('VERSION')}</a>
                           </div>
                         </li>
                         {/* <li>
@@ -178,7 +178,7 @@ export default function Footer() {
                     </ul>
 
                     {/* Copyrights note */}
-                    <div className="text-sm text-gray-600 mr-4">&copy; NotionNext. All rights reserved.</div>
+                    <div className="text-sm text-gray-600 mr-4">&copy; luomarine. All rights reserved.</div>
 
                 </div>
 

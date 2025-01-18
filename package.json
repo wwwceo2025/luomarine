@@ -1,16 +1,16 @@
 {
-  "name": "notion-next",
-  "version": "4.8.1",
-  "homepage": "https://github.com/tangly1024/NotionNext.git",
-  "license": "MIT",
+  "name": "luomarine",
+  "version": "0.1.0",
+  "homepage": "https://luomarine.com",
+  "license": "",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/tangly1024/NotionNext.git"
+    "type": "",
+    "url": "https://luomarine.com"
   },
   "author": {
-    "name": "tangly",
-    "email": "mail@tangly1024.com",
-    "url": "http://tangly1024.com"
+    "name": "Luo Marine",
+    "email": "wwwceo@gmail.com",
+    "url": "https://luomarine.com"
   },
   "scripts": {
     "dev": "next dev",
@@ -72,7 +72,7 @@
     "axios": ">=0.21.1"
   },
   "bugs": {
-    "url": "https://github.com/tangly/NotionNext/issues",
-    "email": "tlyong1992@hotmail.com"
+    "url": "https://luomarine.com",
+    "email": "wwwceo@gmail.com"
   }
 }
