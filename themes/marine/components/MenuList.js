@@ -1,9 +1,10 @@
-import BLOG from '@/blog.config'
-import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
+import { siteConfig } from '@/lib/config'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { MenuItem } from './MenuItem'
+import BLOG from '@/blog.config'
+import { useRouterEvent } from '@/lib/hooks/useRouterEvent'
 
 /**
  * 响应式 折叠菜单
@@ -11,9 +12,13 @@ import { MenuItem } from './MenuItem'
 export const MenuList = props => {
   const { customNav, customMenu } = props
   const { locale } = useGlobal()
-
-  const [showMenu, setShowMenu] = useState(false) // 控制菜单展开/收起状态
+  const [showMenu, setShowMenu] = useState(false)
   const router = useRouter()
+
+  // 使用路由事件hook自动关闭菜单
+  useRouterEvent(() => {
+    setShowMenu(false)
+  })
 
   let links = [
     {
@@ -46,7 +51,7 @@ export const MenuList = props => {
     links = customNav.concat(links)
   }
 
-  // 如果 开启自定义菜单，则覆盖Page生成的菜单
+  // 如果开启自定义菜单，则覆盖Page生成的菜单
   if (siteConfig('CUSTOM_MENU', BLOG.CUSTOM_MENU)) {
     links = customMenu
   }
@@ -55,20 +60,12 @@ export const MenuList = props => {
     return null
   }
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu) // 切换菜单状态
-  }
-
-  useEffect(() => {
-    setShowMenu(false)
-  }, [router])
-
   return (
     <div>
       {/* 移动端菜单切换按钮 */}
       <button
         id='navbarToggler'
-        onClick={toggleMenu}
+        onClick={() => setShowMenu(!showMenu)}
         className={`absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden ${
           showMenu ? 'navbarTogglerActive' : ''
         }`}>
@@ -77,6 +74,7 @@ export const MenuList = props => {
         <span className='relative my-[6px] block h-[2px] w-[30px] bg-white duration-200 transition-all'></span>
       </button>
 
+      {/* 菜单项 */}
       <nav
         id='navbarCollapse'
         className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6 ${
@@ -88,6 +86,14 @@ export const MenuList = props => {
           ))}
         </ul>
       </nav>
+
+      {/* 点击空白处关闭菜单 */}
+      {showMenu && (
+        <div
+          className='fixed inset-0 z-10 lg:hidden'
+          onClick={() => setShowMenu(false)}
+        />
+      )}
     </div>
   )
 }
