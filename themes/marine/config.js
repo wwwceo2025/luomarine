@@ -6,6 +6,12 @@ const CONFIG = {
   STARTER_LOGO: '', // 普通logo图片 示例：/images/starter/logo/logo.svg
   STARTER_LOGO_WHITE: '', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
 
+  // 菜单配置
+  MARINE_MENU_ARCHIVE: true, // 是否显示归档菜单
+  MARINE_MENU_SEARCH: true, // 是否显示搜索菜单
+  MARINE_MENU_CATEGORY: true, // 是否显示分类菜单
+  MARINE_MENU_TAG: true, // 是否显示标签菜单
+
   // MENU ， 菜单部分不在此处配置，请在Notion数据库中添加MENU
 
   // 英雄区块导航
